@@ -48,7 +48,7 @@ h2 {
     border-radius: 15px;
     font-size: 12px;
     font-weight: 400;
-    width: 150px;
+    width: 293px;
     height: 48px;
     background-color: rgba(11, 15, 42, 0.25);
     margin: 12px 40px 40px;
@@ -210,6 +210,7 @@ h2 {
     width: 1200px;
     margin: auto;
     border-radius: 20px;
+    margin-bottom: 20px;
     .text{
         max-width: 700px;
         justify-content: center;
@@ -224,7 +225,32 @@ h2 {
 
 
 
-
+.comment{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    width: 1200px;
+    div{
+        width: 380px;
+        padding: 12px;
+        border-radius: 20px;
+        text-align: center;
+        background-color: rgba(14, 20, 60, 0.85);
+        color: #fff;
+        p{
+           margin: 0px 70px;
+            font-size: 12px;
+            font-weight: 400;
+            padding-bottom: 70px;
+        }
+        h3{
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+}
 
 
 
