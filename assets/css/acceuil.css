@@ -124,12 +124,13 @@ h2 {
 .cocktails {
     margin-top: 60px;
     padding: 20px;
+    max-width: 1235px;
+    margin: auto;
 }
 
 .cocktails p {
     color: #fff;
     margin-bottom: 14px;
-    margin-left: 260px;
 }
 
 .carteCocktails {
