@@ -210,8 +210,9 @@ h2 {
 .Concept{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: center;
+    gap: 197px;
     background-color: rgba(14, 20, 60, 0.85);
     max-width: 1200px;
     width: 80%;
@@ -220,12 +221,11 @@ h2 {
     margin-bottom: 20px;
     .text{
         padding-top: 15px;
-        max-width: 700px;
+        max-width: 485px;
         justify-content: center;
-        gap: 20px;
     }
     img{
-        margin: 57px 40px;
+        margin: 57px 40px  57px 0px;
         max-width: 420px;
         width: 85%;
         border-radius: 20px;
@@ -316,7 +316,11 @@ h2 {
 
 
 
-
+@media (max-width: 1410px) {
+    .Concept{
+        gap: 30px;
+    }
+}
 
 
 /* Media queries pour tablettes */
