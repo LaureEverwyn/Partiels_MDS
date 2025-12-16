@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Contact</title>
@@ -35,56 +36,129 @@
     </header>
 
 
-    <form method="post" action="traitement.php"></form>
-        <h1>Contactez-nous</h1>
-        <section class="info">
-            <div class="ligne">
-                <article>
-                    <h3>Nom</h3>
-                    <input type="text" id="first name" required placeholder="Saisissez votre nom" autocomplete="">
-                </article>
-                <article>
-                    <h3>Prénom</h3>
-                    <input type="text" id="name" required placeholder="Saisissez votre prénom" autocomplete="">
-                </article>
-            </div>
-            <article class="seul">
-                <h3>Adresse e-mail</h3>
-                <input type="text" id="name" required placeholder="Saisissez votre adresse mail" autocomplete="">
-            </article>
-            <article class="seul">
-                <h3>Date de reservation</h3>
-                <input type="date" id="name" required placeholder="jj/mm/aaaa" autocomplete="">
-            </article>
-            <article class="seul">
-                <h3>combien de personnes ?</h3>
-                <input type="number" id="nb" required placeholder="2" min="0" max="12">
-            </article>
-            <article class="seul">
-                <h3>Sujet de votre lieu</h3>
-                <select name="place" id="place">
-                    <option value="" disabled selected hidden>-- Choisissez un lieu --</option>
-                    <option value="plage">Plage</option>
-                    <option value="foret">Foret enchanté</option>
-                    <option value="space">Espace</option>
-                </select>
-            </article>
-            <article class="seul">
-                <h3>Accepter vous de recevoir notre news letter ?</h3>
-                <div class="radio">
-                    <div class="choix">
-                        <input type="radio" id="oui" name="drone" value="oui" checked />
-                        <label for="yes">Oui</label>
-                    </div>
-                    <div class="choix">
-                        <input type="radio" id="no" name="drone" value="no" checked />
-                        <label for="no">Non</label>
-                    </div>
-                </div>
+
+
+
+
+
+
+
+    <form method="post" action="traitement.php">
+        <h1>Contact</h1>
+        <p>Question ? Groupe ? Modifier une reservation ? Écris-nous ici.</p>
+        <hr>
+        <div class="double">
+            <article>
+                <h4>PRÉNOM</h4>
+                <input type="text" placeholder="–">
             </article>
             <article>
-                <button type="submit" class="send"><span>Envoyer</span></button>
+                <h4>EMAIL</h4>
+                <input type="text" placeholder="–">
             </article>
-        </section>
+        </div>
+        <article class="seul">
+            <h4>SUJET</h4>
+            <input type="text" placeholder='Ex : "Entreprise","Anniversaire",...'>
+        </article>
+        <article class="seul">
+            <h4>Message</h4>
+            <textarea name="commentaire" id="message" placeholder="Donne : date souhaitée, nb de personnes, univers, contraintes (allergies / sans alcool)."></textarea>
+        </article>
+
+        <button>Envoyer le message</button>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="titrefooter">
+            <h1>
+               IMMERTIA 
+            </h1>
+            <p>
+                Immertion • Expériences • Cocktails
+            </p>
+        </div>
+        <div class="list">
+            <section>
+                <ul>
+                    <li class="titre">
+                        Navigation
+                    </li>
+                    <li>
+                        Acceuil
+                    </li>
+                    <li>
+                        Univers
+                    </li>
+                    <li>
+                        Experiences & Cocktails
+                    </li>
+                    <li>
+                        Le concept
+                    </li>
+                    <li>
+                        Contact
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li class="titre">
+                        Infos
+                    </li>
+                    <li>
+                        Mentions légales
+                    </li>
+                    <li>
+                        CGU
+                    </li>
+                    <li>
+                        Politique de confidentialité
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li class="titre">
+                        Réseaux
+                    </li>
+                    <li>
+                        Instagram
+                    </li>
+                    <li>
+                        TikTok
+                    </li>
+                    <li>
+                        YouTube
+                    </li>
+                </ul>
+            </section>
+        </div>
+            <hr>
+            <div class="copiright">
+                <p>
+                    © 2025 Immertia
+                </p>
+                <p>    
+                    Design UI/UX • Desktop 1440x3600
+                </p>
+            </div>
+    </footer>
 </body>
 </html>

@@ -1,197 +1,123 @@
-@font-face {
-    font-family: "BebasNeue";
-    src: url(../font/BebasNeue-Regular.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: "SansSource3";
-    src: url(../font/SourceSans3-Black.ttf) format('truetype');
-}
-
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: "SansSource3", Arial, sans-serif;
 }
 
-body{
+body {
     background-color: #1f2360;
+    font-family: Inter, sans-serif;
 }
 
-h1 {
-    text-align: center;
-    font-family: "BebasNeue", Arial, sans-serif;
-    text-transform: uppercase;
-    font-size: clamp(32px, 5vw, 48px);
-    font-weight: 400;
-}
-
-h1 span {
-    color: #CB007B;
-}
-
-h2 {
-    font-family: "BebasNeue", Arial, sans-serif;
-    text-transform: uppercase;
-    font-size: clamp(22px, 3vw, 28px);
-    font-weight: 600;
-}
-
-h2 span {
-    color: #CB007B;
-}
-
-h3 {
-    font-size: clamp(20px, 3vw, 28px);
-    font-style: normal;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: 1px;
-}
-
-input {
-    width: 100%;
-    max-width: 600px;
-    padding: 16px 12px;
-    border-radius: 8px;
-    border: 2px solid #CB007B;
-    background: #FFF;
-    font-size: 16px;
-}
-
-select {
-    width: 100%;
-    max-width: 600px;
-    padding: 16px 12px;
-    border-radius: 8px;
-    border: 2px solid #CB007B;
-    background: #FFF;
-    font-size: 16px;
-}
-
-button {
-    min-width: 106px;
-    height: 48px;
-    padding: 0 20px;
-    border-radius: 100px;
-    background: #6258B2;
-    border: none;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-button:hover {
-    background: #7468C2;
-}
-
-button span {
-    color: #FFF;
-    font-family: "BebasNeue", Arial, sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.info {
-    align-items: center;
+form {
     display: flex;
-    margin: auto;
     flex-direction: column;
-    padding: 20px;
+    margin: auto;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.12) 0%,
+        rgba(255, 255, 255, 0.06) 100%
+    );
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 20px;
+    max-width: 1200px;
     width: 100%;
-    max-width: 800px;
+    padding: 40px 44px;
 }
 
-.info section, div {
+form > * {
     margin-bottom: 20px;
-    max-width: 630px;
 }
 
-.ligne {
+form h1 {
+    margin-bottom: 30px;
+    font-size: clamp(24px, 4vw, 32px);
+}
+
+form hr {
+    background-color: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    width: 100%;
+    margin: 20px 0;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.double {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    gap: 40px;
+}
+
+.double input {
+    flex: 1;
+    min-width: 535px;
+}
+
+.seul input,
+.seul textarea {
     width: 100%;
-    max-width: 600px;
-    gap: 20px;
-    > div{
-        margin-bottom: 0px;
-        width: 46%;
-    }
 }
 
-.ligne input {
-    flex: 1 1 calc(50% - 10px);
-    min-width: 100px;
-    margin-bottom: 0px;
+.seul textarea {
+    min-height: 250px;
+    resize: vertical;
 }
 
-.seul {
-    width: 100%;
-    max-width: 600px;
+input,
+textarea {
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Inter, sans-serif;
+    color: #fff;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.06) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    border: 2px solid rgba(255, 255, 255, 0.12);
+}
+button{
+    padding: 14px 0px;
+    border-radius: 20px;
+    border: 0px;
 }
 
-.choix {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-}
-
-.choix input {
-    width: 20px;
-    height: 20px;
-}
-
-.radio {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-/* Media Queries */
+/* Media queries pour tablettes */
 @media (max-width: 768px) {
-    .ligne {
-        flex-direction: row;
-        gap: 15px;
+    form {
+        padding: 30px 30px;
     }
 
-    .ligne input {
-        width: 100%;
+    .double {
+        gap: 20px;
+    }
+
+    .double input {
         min-width: 100%;
     }
-
-    input, select {
-        font-size: 16px; /* Empêche le zoom sur iOS */
-    }
-
-    button {
-        width: 100%;
-        max-width: 300px;
-    }
 }
 
+/* Media queries pour mobiles */
 @media (max-width: 480px) {
-    .info {
+    body {
         padding: 10px;
     }
 
-    .info div {
-        margin-bottom: 15px;
+    form {
+        padding: 20px 20px;
     }
 
-    input, select {
-        padding: 12px 10px;
-    }
-
-    .radio {
-        flex-direction: row;
+    .double {
         gap: 15px;
     }
 
-    button {
-        height: 44px;
-    }
-
-    button span {
-        font-size: 20px;
+    button[type="submit"] {
+        width: 100%;
     }
 }
