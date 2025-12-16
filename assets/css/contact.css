@@ -24,22 +24,54 @@ form {
     max-width: 1200px;
     width: 100%;
     padding: 40px 44px;
+
+    > * {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        margin-bottom: 30px;
+        font-size: clamp(24px, 4vw, 32px);
+    }
+    hr {
+        background-color: rgba(255, 255, 255, 0.14);
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        width: 100%;
+        margin: 20px 0;
+    }
+
 }
 
-form > * {
-    margin-bottom: 20px;
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
-form h1 {
-    margin-bottom: 30px;
-    font-size: clamp(24px, 4vw, 32px);
+.radio-group input {
+  display: none;
 }
 
-form hr {
-    background-color: rgba(255, 255, 255, 0.14);
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    width: 100%;
-    margin: 20px 0;
+.radio-group label {
+  padding: 21px 77px;
+  border-radius: 999px;
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.25s ease;
+}
+
+.radio-group label:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.radio-group input:checked + label {
+  background: #F5D38A; /* couleur jaune de l’image */
+  color: #2B2B2B;
+  border-color: transparent;
 }
 
 ::placeholder {
@@ -50,13 +82,11 @@ form hr {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    input {
+        flex: 1;
+        min-width: 535px;
+    }
 }
-
-.double input {
-    flex: 1;
-    min-width: 535px;
-}
-
 .seul input,
 .seul textarea {
     width: 100%;

@@ -37,7 +37,34 @@
 
 
 
+    <form action="post">
+        <h1>Réservation</h1>
+        <p>Simple : date + heure + univers + personnes. (Tout est modifiable ensuite.)</p>
+        <hr>
+        <div class="double">
+            <article>
+                <h4>DATE</h4>
+                <input type="date" placeholder="Choisir une date (calendrier)">
+            </article>
+            <article>
+                <h4>Heure</h4>
+                <input type="time" placeholder="Créneau">
+            </article>
+        </div>
+        <article>
+            <h4>Univers</h4>
+            <div class="radio-group">
+                <input type="radio" id="foret" name="univers" value="foret" checked>
+                <label for="foret">Forêt</label>
 
+                <input type="radio" id="plage" name="univers" value="plage">
+                <label for="plage">Plage</label>
+
+                <input type="radio" id="espace" name="univers" value="espace">
+                <label for="espace">Espace</label>
+            </div>
+        </article>
+    </form>
 
 
 
@@ -68,6 +95,7 @@
 
         <button>Envoyer le message</button>
     </form>
+
 
 
 
