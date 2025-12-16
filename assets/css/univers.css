@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* * {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f2360;
+    font-family: "Roboto", sans-serif;
+}
+
+.conteneur_univers {
+    padding: 0 125px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+
+    div {
+        h1 {
+            font-family: "Audiowide", sans-serif;
+            font-size: 36px;
+            gap: 20px
+        }
+
+        p {
+            font-family: "Roboto", sans-serif;
+            font-size: 13px;
+        }
+    }
+
+
+    .conteneur_bloc {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        gap: 10px;
+
+        .bloc {
+            background-color: #3B4071;
+            border: 1px solid #39FFB9;
+            border-radius: 20px;
+            padding: 8px 42px;
+        }
+    }
+
+    .conteneur_video {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+
+        .description {
+            display: flex;
+            flex-direction: column;
+            background-color: #3B4071;
+            border: 1px solid #39FFB9;
+            border-radius: 20px;
+            padding: 25px;
+
+            h2 {
+                font-family: "Audiowide", sans-serif;
+            }
+
+            ul {
+                list-style: inside;
+            }
+
+            span {
+                font-family: "Audiowide", sans-serif;
+                font-size: 30px;
+            }
+
+            .reserver {
+                display: flex;
+                align-items: flex-end;
+
+                button {
+                    background-color: #39FFB9;
+                }
+            }
+
+
+        }
+    }
+
+}
