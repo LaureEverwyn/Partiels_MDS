@@ -126,11 +126,11 @@ h2 {
     padding: 20px;
     max-width: 1235px;
     margin: auto;
-}
 
-.cocktails p {
-    color: #fff;
-    margin-bottom: 14px;
+    p{
+        color: #fff;
+        margin-bottom: 14px;        
+    }
 }
 
 .carteCocktails {
@@ -151,23 +151,23 @@ h2 {
     padding: 20px;
     width: 100%;
     max-width: 380px;
-}
-
-.cocktailsCard img {
-    width: 100%;
-    max-width: 340px;
-    height: auto;
-    aspect-ratio: 340 / 240;
-    object-fit: cover;
-    border-radius: 20px;
+    img{
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+        aspect-ratio: 340 / 240;
+        object-fit: cover;
+        border-radius: 20px;        
+    }
 }
 
 #typeForet h3 {
-    color: #35FFC8;
-}
-
-#typeForet img {
-    border: 1px solid rgba(53, 255, 200, 0.25);
+    h3{
+        color: #35FFC8;        
+    }
+    img{
+        border: 1px solid rgba(53, 255, 200, 0.25);
+    }
 }
 
 #typeEspace h3 {
