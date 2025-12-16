@@ -133,6 +133,11 @@ tete button {
 
 
 
+button:hover{
+    transform: scale(1.05);
+}
+
+
 @media (max-width: 768px) {
     tete {
         padding: 20px;
