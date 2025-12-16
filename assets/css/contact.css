@@ -131,12 +131,10 @@ button{
 
     .double {
         gap: 20px;
-    }
-
-    .double input {
+        input {
         min-width: 100%;
+        }
     }
-}
 
 /* Media queries pour mobiles */
 @media (max-width: 480px) {
