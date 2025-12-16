@@ -1,0 +1,197 @@
+@font-face {
+    font-family: "BebasNeue";
+    src: url(../font/BebasNeue-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "SansSource3";
+    src: url(../font/SourceSans3-Black.ttf) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "SansSource3", Arial, sans-serif;
+}
+
+body{
+    background-color: #1f2360;
+}
+
+h1 {
+    text-align: center;
+    font-family: "BebasNeue", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 400;
+}
+
+h1 span {
+    color: #CB007B;
+}
+
+h2 {
+    font-family: "BebasNeue", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: clamp(22px, 3vw, 28px);
+    font-weight: 600;
+}
+
+h2 span {
+    color: #CB007B;
+}
+
+h3 {
+    font-size: clamp(20px, 3vw, 28px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+input {
+    width: 100%;
+    max-width: 600px;
+    padding: 16px 12px;
+    border-radius: 8px;
+    border: 2px solid #CB007B;
+    background: #FFF;
+    font-size: 16px;
+}
+
+select {
+    width: 100%;
+    max-width: 600px;
+    padding: 16px 12px;
+    border-radius: 8px;
+    border: 2px solid #CB007B;
+    background: #FFF;
+    font-size: 16px;
+}
+
+button {
+    min-width: 106px;
+    height: 48px;
+    padding: 0 20px;
+    border-radius: 100px;
+    background: #6258B2;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #7468C2;
+}
+
+button span {
+    color: #FFF;
+    font-family: "BebasNeue", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.info {
+    align-items: center;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.info section, div {
+    margin-bottom: 20px;
+    max-width: 630px;
+}
+
+.ligne {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    gap: 20px;
+    > div{
+        margin-bottom: 0px;
+        width: 46%;
+    }
+}
+
+.ligne input {
+    flex: 1 1 calc(50% - 10px);
+    min-width: 100px;
+    margin-bottom: 0px;
+}
+
+.seul {
+    width: 100%;
+    max-width: 600px;
+}
+
+.choix {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.choix input {
+    width: 20px;
+    height: 20px;
+}
+
+.radio {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .ligne {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .ligne input {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    input, select {
+        font-size: 16px; /* Empêche le zoom sur iOS */
+    }
+
+    button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .info {
+        padding: 10px;
+    }
+
+    .info div {
+        margin-bottom: 15px;
+    }
+
+    input, select {
+        padding: 12px 10px;
+    }
+
+    .radio {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    button {
+        height: 44px;
+    }
+
+    button span {
+        font-size: 20px;
+    }
+}

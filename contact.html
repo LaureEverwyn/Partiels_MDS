@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <tete>
+            <h1><a href="acceuil.html">Immertia</a></h1>
+            <ul>
+                <li>Acceuil</li>
+                <li>Univers</li>
+                <li>Réservation</li>
+                <li><a href=contact.html>Contact</a></li>
+            </ul>
+            <button>Reserver</button>
+        </tete>
+        
+        <section class="partie1">
+            <section class="titreTxt">
+                <h1>Votre expérience immersive commence ici.</h1>
+                <p>Un bar nouvelle génération où chaque table vous plonge dans un univers virtuel unique</p>
+                <section class="button">
+                    <button>Réserver maintenant</button>
+                    <button>Découvrir nos univers</button>
+                </section>
+            </section>
+            <img src="/assets/img/casque vr.png" alt="casque vr">
+        </section>
+    </header>
+
+
+    <form method="post" action="traitement.php"></form>
+        <h1>Contactez-nous</h1>
+        <section class="info">
+            <div class="ligne">
+                <article>
+                    <h3>Nom</h3>
+                    <input type="text" id="first name" required placeholder="Saisissez votre nom" autocomplete="">
+                </article>
+                <article>
+                    <h3>Prénom</h3>
+                    <input type="text" id="name" required placeholder="Saisissez votre prénom" autocomplete="">
+                </article>
+            </div>
+            <article class="seul">
+                <h3>Adresse e-mail</h3>
+                <input type="text" id="name" required placeholder="Saisissez votre adresse mail" autocomplete="">
+            </article>
+            <article class="seul">
+                <h3>Date de reservation</h3>
+                <input type="date" id="name" required placeholder="jj/mm/aaaa" autocomplete="">
+            </article>
+            <article class="seul">
+                <h3>combien de personnes ?</h3>
+                <input type="number" id="nb" required placeholder="2" min="0" max="12">
+            </article>
+            <article class="seul">
+                <h3>Sujet de votre lieu</h3>
+                <select name="place" id="place">
+                    <option value="" disabled selected hidden>-- Choisissez un lieu --</option>
+                    <option value="plage">Plage</option>
+                    <option value="foret">Foret enchanté</option>
+                    <option value="space">Espace</option>
+                </select>
+            </article>
+            <article class="seul">
+                <h3>Accepter vous de recevoir notre news letter ?</h3>
+                <div class="radio">
+                    <div class="choix">
+                        <input type="radio" id="oui" name="drone" value="oui" checked />
+                        <label for="yes">Oui</label>
+                    </div>
+                    <div class="choix">
+                        <input type="radio" id="no" name="drone" value="no" checked />
+                        <label for="no">Non</label>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <button type="submit" class="send"><span>Envoyer</span></button>
+            </article>
+        </section>
+</body>
+</html>
