@@ -18,7 +18,7 @@ h2 {
     text-align: center;
     color: white;
     font-size: clamp(24px, 4vw, 32px);
-    margin-bottom: 40px;
+    margin: 60px 0px;
 }
 
 .conteneurCard {
