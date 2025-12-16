@@ -1,0 +1,31 @@
+footer{
+    padding: 0 125px;
+    width: 1440px;
+    height: 480px;
+    background: linear-gradient(0deg, #14161A 0%, #2C326B 100% );
+    color: white;
+    div{
+        display: flex;
+        width: 1440px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        h1{
+            margin: 0;
+            align-self: stretch;
+            font-style: italic;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: normal;
+        }
+        p{
+            margin: 0;
+            align-self: stretch;
+            font-size: 13px;
+            font-weight: 400;  
+        }
+        
+    }
+    
+
+}
