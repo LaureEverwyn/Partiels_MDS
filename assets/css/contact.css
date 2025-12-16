@@ -135,6 +135,7 @@ button{
         min-width: 100%;
         }
     }
+}
 
 /* Media queries pour mobiles */
 @media (max-width: 480px) {
