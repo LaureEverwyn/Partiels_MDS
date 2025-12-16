@@ -24,6 +24,7 @@ form {
     max-width: 1200px;
     width: 100%;
     padding: 40px 44px;
+    margin-bottom: 150px;
 
     > * {
         margin-bottom: 20px;
