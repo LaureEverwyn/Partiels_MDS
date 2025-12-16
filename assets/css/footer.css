@@ -2,7 +2,7 @@ footer{
     padding: 0 125px;
     width: 100%;
     height: auto;
-    background: linear-gradient(0deg, #14161A 0%, #2C326B 100% );
+    background: linear-gradient(0deg,#14161a,#1f2360);
     color: white;
     .list{
         display: flex;
