@@ -198,6 +198,39 @@ h2 {
     font-weight: 400;
 }
 
+
+
+
+.Concept{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Media queries pour tablettes */
 @media (max-width: 768px) {
     .cocktails p {
