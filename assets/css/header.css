@@ -1,6 +1,9 @@
 *{
     margin: 0px;
 }
+body{
+    padding: 0px;
+}
 tete{
     align-items: center;
     background: linear-gradient(#14161a,#1f2360);
@@ -51,6 +54,10 @@ tete {
     padding: 20px 40px;
     flex-wrap: wrap;
     gap: 20px;
+    img {
+        align-items: flex-end;
+        width: 10%;
+    }
 }
 
 tete h1 a {
@@ -140,7 +147,6 @@ button:hover{
 
 @media (max-width: 768px) {
     tete {
-        padding: 20px;
         justify-content: center;
     }
         tete ul {

@@ -12,7 +12,7 @@
 <body>
     <header>
         <tete>
-            <h1><a href="index.html">Immertia</a></h1>
+            <h1> <img src="/assets/img/logo/logo.png" alt="logo"><a href="index.html">Immertia</a></h1>
             <ul>
                 <li><a href=index.html>Acceuil</a></li>
                 <li>Univers</li>
@@ -35,83 +35,83 @@
         </section>
     </header>
 
+    <section>
 
-
-    <form action="post">
-        <h1>Réservation</h1>
-        <p>Simple : date + heure + univers + personnes. (Tout est modifiable ensuite.)</p>
-        <hr>
-        <div class="double">
-            <article>
-                <h4>DATE</h4>
-                <input type="date" placeholder="Choisir une date (calendrier)">
-            </article>
-            <article>
-                <h4>Heure</h4>
-                <input type="time" placeholder="Créneau">
-            </article>
-        </div>
-        <article>
-            <h4>Univers</h4>
-            <div class="radio-group">
-                <input type="radio" id="foret" name="univers" value="foret" checked>
-                <label for="foret">Forêt</label>
-
-                <input type="radio" id="plage" name="univers" value="plage">
-                <label for="plage">Plage</label>
-
-                <input type="radio" id="espace" name="univers" value="espace">
-                <label for="espace">Espace</label>
-            </div>
-        </article>
-        <article>
+        <form action="post">
+            <h1>Réservation</h1>
+            <p>Simple : date + heure + univers + personnes. (Tout est modifiable ensuite.)</p>
+            <hr>
             <div class="double">
                 <article>
-                    <h4>nombre de personnes</h4>
-                    <input type="number" placeholder="2" maxlength="5">
-                </article>  
+                    <h4>DATE</h4>
+                    <input type="date" placeholder="Choisir une date (calendrier)">
+                </article>
                 <article>
-                    <h4>note (Option)</h4>
-                    <input type="text" placeholder="message">
-                </article>  
+                    <h4>Heure</h4>
+                    <input type="time" placeholder="Créneau">
+                </article>
             </div>
-        </article>
-        <button> Réserver</button>
-    </form>
-
-
-
-
-
-    <form method="post" action="traitement.php" id="contact">
-        <h1>Contact</h1>
-        <p>Question ? Groupe ? Modifier une reservation ? Écris-nous ici.</p>
-        <hr>
-        <div class="double">
             <article>
-                <h4>PRÉNOM</h4>
-                <input type="text" placeholder="–">
+                <h4>Univers</h4>
+                <div class="radio-group">
+                    <input type="radio" id="foret" name="univers" value="foret" checked>
+                    <label for="foret">Forêt</label>
+
+                    <input type="radio" id="plage" name="univers" value="plage">
+                    <label for="plage">Plage</label>
+
+                    <input type="radio" id="espace" name="univers" value="espace">
+                    <label for="espace">Espace</label>
+                </div>
             </article>
             <article>
-                <h4>EMAIL</h4>
-                <input type="text" placeholder="–">
+                <div class="double">
+                    <article>
+                        <h4>nombre de personnes</h4>
+                        <input type="number" placeholder="2" maxlength="5">
+                    </article>  
+                    <article>
+                        <h4>note (Option)</h4>
+                        <input type="text" placeholder="message">
+                    </article>  
+                </div>
             </article>
-        </div>
-        <article class="seul">
-            <h4>SUJET</h4>
-            <input type="text" placeholder='Ex : "Entreprise","Anniversaire",...'>
-        </article>
-        <article class="seul">
-            <h4>Message</h4>
-            <textarea name="commentaire" id="message" placeholder="Donne : date souhaitée, nb de personnes, univers, contraintes (allergies / sans alcool)."></textarea>
-        </article>
-
-        <button>Envoyer le message</button>
-    </form>
+            <button> Réserver</button>
+        </form>
 
 
 
 
+
+        <form method="post" action="traitement.php" id="contact">
+            <h1>Contact</h1>
+            <p>Question ? Groupe ? Modifier une reservation ? Écris-nous ici.</p>
+            <hr>
+            <div class="double">
+                <article>
+                    <h4>PRÉNOM</h4>
+                    <input type="text" placeholder="–">
+                </article>
+                <article>
+                    <h4>EMAIL</h4>
+                    <input type="text" placeholder="–">
+                </article>
+            </div>
+            <article class="seul">
+                <h4>SUJET</h4>
+                <input type="text" placeholder='Ex : "Entreprise","Anniversaire",...'>
+            </article>
+            <article class="seul">
+                <h4>Message</h4>
+                <textarea name="commentaire" id="message" placeholder="Donne : date souhaitée, nb de personnes, univers, contraintes (allergies / sans alcool)."></textarea>
+            </article>
+
+            <button>Envoyer le message</button>
+        </form>
+
+
+
+    </section>
 
 
 

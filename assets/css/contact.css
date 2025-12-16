@@ -125,6 +125,10 @@ button{
         padding: 30px 30px;
     }
 
+    section {
+        padding: 20px;
+    }
+
     .double {
         gap: 20px;
     }
@@ -136,10 +140,10 @@ button{
 
 /* Media queries pour mobiles */
 @media (max-width: 480px) {
-    body {
+
+    section {
         padding: 10px;
     }
-
     form {
         padding: 20px 20px;
     }
