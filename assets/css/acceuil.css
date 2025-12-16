@@ -238,6 +238,7 @@ h2 {
     margin: auto;
     width: 70%;
     max-width: 1200px;
+    margin-bottom: 60px;
     div{
         width: 380px;
         padding: 12px;
@@ -260,7 +261,43 @@ h2 {
 
 
 
-
+.pret{
+    background-color: #7cfff3;
+    max-width: 1200px;
+    width: 85%;
+    color: #081027;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 60px;
+    h2{
+        padding-top: 12px;
+        color: #081027;
+        margin: 12px 0px;
+        font-style: italic;
+        font-size: 30px;
+        font font-weight: 700;
+    }
+    p{
+        margin-bottom: 12px;
+    }
+    button{
+        background: linear-gradient;
+        max-width: 220px;
+        width: 85%;
+        background: linear-gradient(
+            180deg,
+            rgba(11, 15, 42, 0) 0%,
+            rgba(11, 15, 42, 0.22) 100%
+        );
+        font-size: 12px;
+        padding: 12px 51px;
+        border: 0px;
+        border-radius: 20px;
+    }
+}
 
 
 
