@@ -1,318 +1,222 @@
 * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            background-color: #1f2360;
-            font-family: "Roboto", sans-serif;
-        }
+body {
+    background-color: #1f2360;
+    font-family: "Roboto", sans-serif;
+}
 
-        /* Header styles */
-        header tete {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+.conteneur_univers {
+    padding: 40px 125px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+}
 
-        header tete h1 a {
-            color: #FFF;
-            text-decoration: none;
-            font-size: 24px;
-        }
+.conteneur_univers h1 {
+    font-family: "Audiowide", sans-serif;
+    font-size: clamp(28px, 5vw, 36px);
+    margin-bottom: 10px;
+}
 
-        header tete ul {
-            display: flex;
-            list-style: none;
-            gap: 30px;
-            color: #FFF;
-        }
+.conteneur_univers>div>p {
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+}
 
-        header tete ul li a {
-            color: #FFF;
-            text-decoration: none;
-        }
+.conteneur_bloc {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+}
 
-        header tete button {
-            color: #14161A;
-            background: #45FFF4;
-            border: none;
-            padding: 10px 30px;
-            border-radius: 10px;
-            font-size: 16px;
-            cursor: pointer;
-        }
+.conteneur_bloc span {
+    background-color: #3B4071;
+    border: 1px solid #39FFB9;
+    border-radius: 20px;
+    padding: 8px 42px;
+    font-size: clamp(12px, 2vw, 14px);
+    white-space: nowrap;
+}
 
-        .partie1 {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            margin: 50px 20px;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
+.conteneur_bloc span:hover {
+    background-color: #39FFB9;
+    cursor: pointer;
+}
 
-        .partie1 img {
-            width: 100%;
-            max-width: 500px;
-            height: auto;
-        }
+.conteneur_video {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+}
 
-        .titreTxt {
-            max-width: 624px;
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
+.conteneur_video video {
+    border-radius: 20px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
 
-        .titreTxt h1 {
-            color: #FFF;
-            font-size: clamp(28px, 5vw, 40px);
-            font-weight: 400;
-        }
+.description {
+    display: flex;
+    flex-direction: column;
+    background-color: #3B4071;
+    border: 1px solid #39FFB9;
+    border-radius: 20px;
+    padding: 24px;
+    gap: 20px;
+    min-width: 300px;
+}
 
-        .titreTxt p {
-            color: #FFF;
-            font-size: clamp(16px, 3vw, 20px);
-            font-weight: 400;
-        }
+.description h2 {
+    font-family: "Audiowide", sans-serif;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
 
-        .button {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
+.description ul {
+    list-style: inside;
+    font-size: 12px;
+    line-height: 1.6;
+}
 
-        .button button {
-            color: #14161A;
-            background: #45FFF4;
-            border: none;
-            padding: 17px 40px;
-            border-radius: 10px;
-            font-size: clamp(14px, 2.5vw, 18px);
-            cursor: pointer;
-            flex: 1;
-            min-width: 200px;
-        }
+.description p {
+    font-size: 12px;
+    line-height: 1.6;
+}
 
-        /* Conteneur univers */
-        .conteneur_univers {
-            padding: 40px 125px;
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            color: white;
-        }
+.description>div>span {
+    font-family: "Audiowide", sans-serif;
+    font-size: 24px;
+    color: #39FFB9;
+}
 
-        .conteneur_univers h1 {
-            font-family: "Audiowide", sans-serif;
-            font-size: clamp(28px, 5vw, 36px);
-            margin-bottom: 10px;
-        }
+.reserver {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+}
 
-        .conteneur_univers > div > p {
-            font-family: "Roboto", sans-serif;
-            font-size: 13px;
-        }
+.reserver button {
+    background-color: #39FFB9;
+    border-radius: 20px;
+    padding: 12px 24px;
+    border: 0;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
 
-        .conteneur_bloc {
-            display: flex;
-            width: 100%;
-            align-items: flex-start;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+.reserver button:hover {
+    background-color: #2ee0a0;
+}
 
-        .conteneur_bloc span {
-            background-color: #3B4071;
-            border: 1px solid #39FFB9;
-            border-radius: 20px;
-            padding: 8px 42px;
-            font-size: clamp(12px, 2vw, 14px);
-            white-space: nowrap;
-        }
+.conteneur_image {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+}
 
-        .conteneur_bloc span:hover {
-            background-color: #39FFB9;
-            cursor: pointer;
-        }
+.conteneur_image img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
 
-        .conteneur_video {
-            display: flex;
-            flex-direction: row;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
+/* Media queries pour tablettes */
+@media (max-width: 768px) {
+    header tete {
+        padding: 20px;
+        justify-content: center;
+    }
 
-        .conteneur_video video {
-            border-radius: 20px;
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-        }
+    header tete ul {
+        gap: 15px;
+        font-size: 14px;
+    }
 
-        .description {
-            display: flex;
-            flex-direction: column;
-            background-color: #3B4071;
-            border: 1px solid #39FFB9;
-            border-radius: 20px;
-            padding: 24px;
-            gap: 20px;
-            flex: 1;
-            min-width: 300px;
-        }
+    .partie1 {
+        flex-direction: column-reverse;
+        margin: 30px 20px;
+    }
 
-        .description h2 {
-            font-family: "Audiowide", sans-serif;
-            font-size: 18px;
-            margin-bottom: 8px;
-        }
+    .button {
+        flex-direction: column;
+    }
 
-        .description ul {
-            list-style: inside;
-            font-size: 12px;
-            line-height: 1.6;
-        }
+    .button button {
+        width: 100%;
+        min-width: unset;
+    }
 
-        .description p {
-            font-size: 12px;
-            line-height: 1.6;
-        }
+    .conteneur_univers {
+        padding: 40px 40px;
+    }
 
-        .description > div > span {
-            font-family: "Audiowide", sans-serif;
-            font-size: 24px;
-            color: #39FFB9;
-        }
+    .conteneur_video {
+        flex-direction: column;
+    }
 
-        .reserver {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: auto;
-        }
+    .conteneur_image {
+        gap: 20px;
+    }
+}
 
-        .reserver button {
-            background-color: #39FFB9;
-            border-radius: 20px;
-            padding: 12px 24px;
-            border: 0;
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
+/* Media queries pour mobiles */
+@media (max-width: 480px) {
+    header tete {
+        flex-direction: column;
+        gap: 15px;
+    }
 
-        .reserver button:hover {
-            background-color: #2ee0a0;
-        }
+    header tete ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
 
-        .conteneur_image {
-            display: flex;
-            flex-direction: row;
-            gap: 40px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
+    header tete button {
+        width: 100%;
+    }
 
-        .conteneur_image img {
-            max-width: 300px;
-            width: 100%;
-            height: auto;
-            border-radius: 20px;
-            object-fit: cover;
-        }
+    .partie1 {
+        margin: 20px 10px;
+    }
 
-        /* Media queries pour tablettes */
-        @media (max-width: 768px) {
-            header tete {
-                padding: 20px;
-                justify-content: center;
-            }
+    .conteneur_univers {
+        padding: 20px 20px;
+        gap: 30px;
+    }
 
-            header tete ul {
-                gap: 15px;
-                font-size: 14px;
-            }
+    .conteneur_bloc {
+        gap: 8px;
+    }
 
-            .partie1 {
-                flex-direction: column-reverse;
-                margin: 30px 20px;
-            }
+    .conteneur_bloc span {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
 
-            .button {
-                flex-direction: column;
-            }
+    .description {
+        padding: 20px;
+        min-width: unset;
+    }
 
-            .button button {
-                width: 100%;
-                min-width: unset;
-            }
+    .conteneur_image {
+        gap: 15px;
+    }
 
-            .conteneur_univers {
-                padding: 40px 40px;
-            }
-
-            .conteneur_video {
-                flex-direction: column;
-            }
-
-            .conteneur_image {
-                gap: 20px;
-            }
-        }
-
-        /* Media queries pour mobiles */
-        @media (max-width: 480px) {
-            header tete {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            header tete ul {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 10px;
-            }
-
-            header tete button {
-                width: 100%;
-            }
-
-            .partie1 {
-                margin: 20px 10px;
-            }
-
-            .conteneur_univers {
-                padding: 20px 20px;
-                gap: 30px;
-            }
-
-            .conteneur_bloc {
-                gap: 8px;
-            }
-
-            .conteneur_bloc span {
-                padding: 8px 20px;
-                font-size: 12px;
-            }
-
-            .description {
-                padding: 20px;
-                min-width: unset;
-            }
-
-            .conteneur_image {
-                gap: 15px;
-            }
-
-            .conteneur_image img {
-                max-width: 100%;
-            }
-        }
+    .conteneur_image img {
+        max-width: 100%;
+    }
+}
