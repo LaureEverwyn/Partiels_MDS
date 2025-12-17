@@ -204,33 +204,36 @@ h2 {
     font-weight: 400;
 }
 
-
-
-
-.Concept{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    gap: 197px;
-    background-color: rgba(14, 20, 60, 0.85);
-    max-width: 1200px;
-    width: 80%;
-    margin: auto;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    .text{
-        padding-top: 15px;
-        max-width: 485px;
+.concept {
+    a{
+        text-decoration: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: center;
-    }
-    img{
-        margin: 57px 40px  57px 0px;
-        max-width: 420px;
-        width: 85%;
+        gap: 197px;
+        background-color: rgba(14, 20, 60, 0.85);
+        max-width: 1200px;
+        width: 80%;
+        margin: auto;
         border-radius: 20px;
+        margin-bottom: 20px;
+
+        .text{
+            padding-top: 15px;
+            max-width: 485px;
+            justify-content: center;
+
+        }
+        img{
+            margin: 57px 40px  57px 0px;
+            max-width: 420px;
+            width: 85%;
+            border-radius: 20px;
+        }
     }
 }
+
 
 
 

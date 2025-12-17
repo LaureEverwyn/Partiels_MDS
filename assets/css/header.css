@@ -140,7 +140,7 @@ tete button {
 
 
 
-button:hover{
+button:hover, a:hover{
     transform: scale(1.05);
 }
 
