@@ -133,7 +133,6 @@ body {
     object-fit: cover;
 }
 
-/* Media queries pour tablettes */
 @media (max-width: 768px) {
     header tete {
         padding: 20px;
