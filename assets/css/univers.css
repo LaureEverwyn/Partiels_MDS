@@ -62,12 +62,13 @@ body {
             h2 {
                 font-family: "Audiowide", sans-serif;
             }
-            div{
-                > ul {
-                list-style: inside;
+
+            div {
+                ul {
+                    list-style: inside;
                 }
             }
-            
+
 
             span {
                 font-family: "Audiowide", sans-serif;
