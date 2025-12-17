@@ -93,14 +93,13 @@ tete button {
     margin: 50px 20px;
     gap: 40px;
     flex-wrap: wrap;
-}
+    img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+}   
 
-.partie1 img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
 }
-
 .titreTxt {
     max-width: 624px;
     display: flex;
@@ -167,7 +166,7 @@ button:hover, a:hover{
 
     .button button {
         width: 100%;
-        min-width: unset;
+        min-width: 300px;
     }
 }
 

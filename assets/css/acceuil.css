@@ -1,15 +1,3 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #1f2360;
-    font-family: Inter, sans-serif;
-}
-
 .partie2 {
     padding: 20px;
     z-index: 99;

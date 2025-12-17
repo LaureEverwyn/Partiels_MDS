@@ -26,3 +26,21 @@ h2 {
 h3{
     margin: 10px 0px;
 }
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f2360;
+    font-family: Inter, sans-serif;
+}
+
+
+section{
+    padding: 20px 10px;
+}
