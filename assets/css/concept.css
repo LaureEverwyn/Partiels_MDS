@@ -22,6 +22,9 @@ body {
     width: 100%;
     padding: 40px 44px;
     margin: 0 auto 150px;
+    p{
+        margin-bottom: 10px;
+    }
 }
 
 .conteneur h2 {
@@ -57,11 +60,15 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.10);
     background: #0B102F;
     width: 500px;
+    
     img{
         border-radius: 20px;
     }
     li{
         margin-left: 10px;
+    }
+    h2{
+        margin-bottom: 10px;
     }
 }
 
