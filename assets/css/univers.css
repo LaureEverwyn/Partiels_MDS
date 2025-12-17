@@ -38,12 +38,18 @@ body {
         align-items: flex-start;
         gap: 10px;
 
-        .bloc {
+        span {
             background-color: #3B4071;
             border: 1px solid #39FFB9;
             border-radius: 20px;
             padding: 8px 42px;
         }
+
+        span:hover {
+            background-color: #39FFB9;
+            cursor: pointer;
+        }
+
     }
 
     .conteneur_video {
@@ -51,41 +57,82 @@ body {
         flex-direction: row;
         gap: 40px;
 
+        video {
+            border-radius: 20px;
+        }
+
         .description {
             display: flex;
             flex-direction: column;
             background-color: #3B4071;
             border: 1px solid #39FFB9;
             border-radius: 20px;
-            padding: 25px;
+            padding: 24px;
+            gap: 10px;
 
             h2 {
                 font-family: "Audiowide", sans-serif;
+                font-size: 18px;
             }
 
             div {
                 ul {
                     list-style: inside;
+                    font-size: 12px;
                 }
+            }
+
+            p {
+                font-size: 12px;
             }
 
 
             span {
                 font-family: "Audiowide", sans-serif;
-                font-size: 30px;
+                font-size: 24px;
             }
 
             .reserver {
                 display: flex;
-                align-items: flex-end;
+                justify-content: end;
 
                 button {
                     background-color: #39FFB9;
+                    border-radius: 20px;
+                    padding: 10px 12px;
+                    border: 0;
                 }
             }
 
 
         }
     }
+
+    .conteneur_image {
+        display: flex;
+        flex-direction: row;
+        gap: 90px;
+
+        .premiere_image {
+            img {
+                max-width: 300px;
+                max-height: 170px;
+                width: 130%;
+                height: 130%;
+                border-radius: 20px;
+            }
+        }
+
+        .deuxieme_image {
+            img {
+                max-height: 170px;
+                border-radius: 20px;
+                max-width: 300px;
+                width: 130%;
+                height: 130%;
+            }
+        }
+    }
+
 
 }
