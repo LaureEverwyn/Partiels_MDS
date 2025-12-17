@@ -12,6 +12,7 @@ body {
 
 .partie2 {
     padding: 20px;
+    z-index: 99;
 }
 
 h2 {
