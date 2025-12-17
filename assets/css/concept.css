@@ -32,6 +32,7 @@ body {
 .cardContainer {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     gap: 30px;
     margin-bottom: 60px;
 }
@@ -47,6 +48,22 @@ body {
     width: 342px;
 }
 
+.cardtech{
+    padding: 18px 28px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: #0B102F;
+    width: 500px;
+    img{
+        border-radius: 20px;
+    }
+    li{
+        margin-left: 10px;
+    }
+}
 
 
 /* Media queries pour tablettes */
@@ -58,11 +75,15 @@ body {
 
     .cardContainer {
         gap: 20px;
+        justify-content: center;
     }
 
-    .card {
+    .card, .cardtech{
         width: 768px;
         max-width: 100%;
+        img{
+            max-width: 748px;
+        }
     }
 }
 
@@ -78,8 +99,11 @@ body {
         gap: 15px;
     }
 
-    .card {
+    .card, .cardtech{
         padding: 15px 20px;
         gap: 20px;
+        img{
+            max-width: 460px;
+        }
     }
 }

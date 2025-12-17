@@ -321,7 +321,10 @@ h2 {
 
 @media (max-width: 1410px) {
     .Concept{
-        gap: 30px;
+        a{
+            gap: 30px;
+        }
+        
     }
 }
 
