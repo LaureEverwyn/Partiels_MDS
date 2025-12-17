@@ -13,10 +13,6 @@ footer {
         align-items: flex-start;
         gap: 10px;
 
-        @media (max-width: 600px) {
-            flex-direction: column;
-            gap: 32px
-        }
 
         h1 {
             margin: 0;
@@ -74,15 +70,23 @@ footer {
         display: flex;
         justify-content: space-between;
 
-        @media (max-width: 600px) {
-            flex-direction: column;
-            gap: 20px
-        }
+    }
+}
+/* Media queries pour mobiles */
+@media (max-width: 480px) {
+    footer{
+        flex-wrap: wrap;
     }
 }
 
+@media (max-width: 768px) {
+    footer{
+        max-width: 768px;
+        flex-wrap: wrap;
+        .list{
+            flex-direction: column;
+            gap: 32px
+        }
+    }
 
-
-@media (max-width: 410px) {
-    flex-wrap: wrap;
 }
