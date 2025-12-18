@@ -301,6 +301,13 @@ button:hover {
         border: 0px;
         border-radius: 20px;
     }
+    source{
+        border-radius: 20;
+    }
+    video{
+        max-width: 100%;
+        border-radius: 20px;
+    }
 }
 
 
