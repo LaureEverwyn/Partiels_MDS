@@ -26,11 +26,15 @@ h2 {
     flex-direction: column;
     border: 2px solid;
 
-    
+
 }
-.card:hover, .cocktailsCard:hover, button:hover{
+
+.card:hover,
+.cocktailsCard:hover,
+button:hover {
     transform: scale(1.05);
 }
+
 .card img {
     margin: 40px auto;
     width: 80px;
@@ -70,12 +74,10 @@ h2 {
 
 .plage {
     border-color: #FF9A5F;
-    background: linear-gradient(
-        135deg,
-        rgba(255, 178, 91, 0.25) 0%,
-        rgba(255, 106, 106, 0.25) 55%,
-        rgba(255, 61, 129, 0.25) 100%
-    );
+    background: linear-gradient(135deg,
+            rgba(255, 178, 91, 0.25) 0%,
+            rgba(255, 106, 106, 0.25) 55%,
+            rgba(255, 61, 129, 0.25) 100%);
 }
 
 .plage button {
@@ -85,12 +87,10 @@ h2 {
 
 .espace {
     border-color: #7B7CFF;
-    background: linear-gradient(
-        135deg,
-        rgba(74, 163, 255, 0.25) 0%,
-        rgba(108, 99, 255, 0.25) 55%,
-        rgba(179, 75, 255, 0.25) 100%
-    );
+    background: linear-gradient(135deg,
+            rgba(74, 163, 255, 0.25) 0%,
+            rgba(108, 99, 255, 0.25) 55%,
+            rgba(179, 75, 255, 0.25) 100%);
 }
 
 .espace button {
@@ -100,12 +100,10 @@ h2 {
 
 .foret {
     border-color: #35FFC8;
-    background: linear-gradient(
-        135deg,
-        rgba(53, 255, 200, 0.25) 0%,
-        rgba(28, 199, 166, 0.25) 60%,
-        rgba(15, 174, 144, 0.25) 100%
-    );
+    background: linear-gradient(135deg,
+            rgba(53, 255, 200, 0.25) 0%,
+            rgba(28, 199, 166, 0.25) 60%,
+            rgba(15, 174, 144, 0.25) 100%);
 }
 
 .foret button {
@@ -120,9 +118,9 @@ h2 {
     max-width: 1235px;
     margin: auto;
 
-    p{
+    p {
         color: #fff;
-        margin-bottom: 14px;        
+        margin-bottom: 14px;
     }
 }
 
@@ -144,23 +142,25 @@ h2 {
     padding: 20px;
     width: 100%;
     max-width: 380px;
-    img{
+
+    img {
         width: 100%;
         max-width: 340px;
         height: auto;
         aspect-ratio: 340 / 240;
         object-fit: cover;
-        border-radius: 20px;        
+        border-radius: 20px;
     }
 
-    
+
 }
 
 #typeForet h3 {
-    h3{
-        color: #35FFC8;        
+    h3 {
+        color: #35FFC8;
     }
-    img{
+
+    img {
         border: 1px solid rgba(53, 255, 200, 0.25);
     }
 }
@@ -196,13 +196,12 @@ h2 {
 }
 
 .concept {
-    a{
+    a {
         text-decoration: none;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
-        gap: 197px;
         background-color: rgba(14, 20, 60, 0.85);
         max-width: 1200px;
         width: 80%;
@@ -210,14 +209,15 @@ h2 {
         border-radius: 20px;
         margin-bottom: 20px;
 
-        .text{
+        .text {
             padding-top: 15px;
             max-width: 485px;
             justify-content: center;
 
         }
-        img{
-            margin: 57px 40px  57px 0px;
+
+        img {
+            margin: 57px 40px 57px 0px;
             max-width: 420px;
             width: 85%;
             border-radius: 20px;
@@ -228,7 +228,7 @@ h2 {
 
 
 
-.comment{
+.comment {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -238,20 +238,23 @@ h2 {
     width: 70%;
     max-width: 1200px;
     margin-bottom: 60px;
-    div{
+
+    div {
         width: 380px;
         padding: 12px;
         border-radius: 20px;
         text-align: center;
         background-color: rgba(14, 20, 60, 0.85);
         color: #fff;
-        p{
-           margin: 0px 70px;
+
+        p {
+            margin: 0px 70px;
             font-size: 12px;
             font-weight: 400;
             padding-bottom: 70px;
         }
-        h3{
+
+        h3 {
             font-size: 18px;
             font-weight: 400;
         }
@@ -260,7 +263,7 @@ h2 {
 
 
 
-.pret{
+.pret {
     background-color: #7cfff3;
     max-width: 1200px;
     width: 85%;
@@ -271,7 +274,8 @@ h2 {
     font-size: 12px;
     font-weight: 400;
     margin-bottom: 60px;
-    h2{
+
+    h2 {
         padding-top: 12px;
         color: #081027;
         margin: 12px 0px;
@@ -279,18 +283,18 @@ h2 {
         font-size: 30px;
         font-weight: 700;
     }
-    p{
+
+    p {
         margin-bottom: 12px;
     }
-    button{
+
+    button {
         background: linear-gradient;
         max-width: 220px;
         width: 85%;
-        background: linear-gradient(
-            180deg,
-            rgba(11, 15, 42, 0) 0%,
-            rgba(11, 15, 42, 0.22) 100%
-        );
+        background: linear-gradient(180deg,
+                rgba(11, 15, 42, 0) 0%,
+                rgba(11, 15, 42, 0.22) 100%);
         font-size: 12px;
         padding: 12px 51px;
         margin-bottom: 20px;
@@ -303,11 +307,11 @@ h2 {
 
 
 @media (max-width: 1410px) {
-    .Concept{
-        a{
+    .Concept {
+        a {
             gap: 30px;
         }
-        
+
     }
 }
 
@@ -326,8 +330,8 @@ h2 {
         gap: 30px;
     }
 
-    .comment{
-        gap:20px
+    .comment {
+        gap: 20px
     }
 }
 
@@ -357,7 +361,7 @@ h2 {
         max-width: 100%;
         padding: 15px;
     }
-    
+
     .Concept img {
         max-width: 100%;
         margin: 20px;

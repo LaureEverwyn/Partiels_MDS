@@ -72,18 +72,20 @@ footer {
 
     }
 }
-/* Media queries pour mobiles */
+
 @media (max-width: 480px) {
-    footer{
+    footer {
         flex-wrap: wrap;
     }
 }
 
 @media (max-width: 768px) {
-    footer{
+    footer {
+        padding: 28px;
         max-width: 768px;
         flex-wrap: wrap;
-        .list{
+
+        .list {
             flex-direction: column;
             gap: 32px
         }
